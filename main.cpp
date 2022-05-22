@@ -1,9 +1,8 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "VirtualCallInCtorOrDtor"
+
 #include <wx/wxprec.h>
 
 #ifndef WX_PRECOMP
-#include <wx/wx.h>
+    #include <wx/wx.h>
 #endif
 
 
@@ -16,16 +15,15 @@ public:
 class MyApplicationFrame : public wxFrame
 {
 public:
-    MyApplicationFrame(const wxString& title, const wxPoint& position, const wxSize& size);
+    MyApplicationFrame(const wxString &title, const wxPoint &position, const wxSize &size);
 
 private:
-    void OnHello(wxCommandEvent& event);
-    void OnExit(wxCommandEvent& event);
-    void OnAbout(wxCommandEvent& event);
+    void OnHello(wxCommandEvent &event);
+    void OnExit(wxCommandEvent &event);
+    void OnAbout(wxCommandEvent &event);
 
 wxDECLARE_EVENT_TABLE();
 };
-
 
 enum
 {
@@ -50,7 +48,7 @@ bool MyApplication::OnInit()
 }
 
 // The default constructor
-MyApplicationFrame::MyApplicationFrame(const wxString& title, const wxPoint& position, const wxSize& size) : wxFrame(NULL, wxID_ANY, title, position, size)
+MyApplicationFrame::MyApplicationFrame(const wxString &title, const wxPoint &position, const wxSize &size) : wxFrame(NULL, wxID_ANY, title, position, size)
 {
     wxMenu *menuFile = new wxMenu;
     menuFile->Append(ID_Hello, "&Hello...\tCtrl-H", "..string shown in the status bar in bottom left corner");
@@ -74,20 +72,17 @@ MyApplicationFrame::MyApplicationFrame(const wxString& title, const wxPoint& pos
 }
 
 // Menu Functions
-
-void MyApplicationFrame::OnExit(wxCommandEvent& event)
+void MyApplicationFrame::OnExit(wxCommandEvent &event)
 {
     Close( true );
 }
 
-void MyApplicationFrame::OnAbout(wxCommandEvent& event)
+void MyApplicationFrame::OnAbout(wxCommandEvent &event)
 {
     wxMessageBox("The OnAbout function!", ".. with second string parameter", wxOK | wxICON_INFORMATION );
 }
 
-void MyApplicationFrame::OnHello(wxCommandEvent& event)
+void MyApplicationFrame::OnHello(wxCommandEvent &event)
 {
     wxLogMessage("The OnHello function!");
 }
-
-#pragma clang diagnostic pop

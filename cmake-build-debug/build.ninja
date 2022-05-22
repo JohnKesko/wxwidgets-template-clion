@@ -49,9 +49,17 @@ cmake_ninja_workdir = /Users/andreas/Development/1_CPP_Projects/clionproject1/cm
 
 build cmake_object_order_depends_target_clionproject1: phony || CMakeFiles/clionproject1.dir
 
-build CMakeFiles/clionproject1.dir/main.cpp.o: CXX_COMPILER__clionproject1_Debug /Users/andreas/Development/1_CPP_Projects/clionproject1/main.cpp || cmake_object_order_depends_target_clionproject1
+build CMakeFiles/clionproject1.dir/cApp.cpp.o: CXX_COMPILER__clionproject1_Debug /Users/andreas/Development/1_CPP_Projects/clionproject1/cApp.cpp || cmake_object_order_depends_target_clionproject1
   DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
-  DEP_FILE = CMakeFiles/clionproject1.dir/main.cpp.o.d
+  DEP_FILE = CMakeFiles/clionproject1.dir/cApp.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17
+  INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1
+  OBJECT_DIR = CMakeFiles/clionproject1.dir
+  OBJECT_FILE_DIR = CMakeFiles/clionproject1.dir
+
+build CMakeFiles/clionproject1.dir/cMain.cpp.o: CXX_COMPILER__clionproject1_Debug /Users/andreas/Development/1_CPP_Projects/clionproject1/cMain.cpp || cmake_object_order_depends_target_clionproject1
+  DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
+  DEP_FILE = CMakeFiles/clionproject1.dir/cMain.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17
   INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1
   OBJECT_DIR = CMakeFiles/clionproject1.dir
@@ -65,7 +73,7 @@ build CMakeFiles/clionproject1.dir/main.cpp.o: CXX_COMPILER__clionproject1_Debug
 #############################################
 # Link the executable clionproject1
 
-build clionproject1: CXX_EXECUTABLE_LINKER__clionproject1_Debug CMakeFiles/clionproject1.dir/main.cpp.o
+build clionproject1: CXX_EXECUTABLE_LINKER__clionproject1_Debug CMakeFiles/clionproject1.dir/cApp.cpp.o CMakeFiles/clionproject1.dir/cMain.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.1  -lwx_baseu-3.1
   LINK_PATH = -L/usr/local/lib

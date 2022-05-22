@@ -1,9 +1,10 @@
 # define minimum cmake version
 cmake_minimum_required(VERSION 3.22)
+set(CMAKE_CXX_STANDARD 17)
 
 project(clionproject1)
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}")
+
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
 ##---------------------------------------------
 ## Please set your wxWidgets configuration here
@@ -22,15 +23,16 @@ find_package(wxWidgets COMPONENTS core base REQUIRED)
 ## Actual config file starts here
 ##---------------------------------------------
 # wxWidgets include (this will do all the magic to configure everything)
-include("${wxWidgets_USE_FILE}")
+include(${wxWidgets_USE_FILE})
 
-set(SRCS main.cpp)
+set(SRCS cApp.cpp cMain.cpp cApp.h cMain.h)
 
 # If we build for windows systems, we also include the resource file
 # containing the manifest, icon and other resources.
 if (WIN32)
-    set(SRCS ${SRCS} wxWidgetTest.rc main.cpp)
+    set(SRCS ${SRCS} wxWidgetTest.rc cMain.cpp cMain.h cApp.h cApp.cpp)
 endif (WIN32)
 
 add_executable(${PROJECT_NAME} WIN32 ${SRCS})
+
 target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES})
