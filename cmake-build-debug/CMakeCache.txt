@@ -213,6 +213,15 @@ clionproject1_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 clionproject1_SOURCE_DIR:STATIC=/Users/andreas/Development/1_CPP_Projects/clionproject1
 
+//Location of wxWidgets library configuration provider binary (wx-config).
+wxWidgets_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/wx-config
+
+//Use debug build?
+wxWidgets_USE_DEBUG:BOOL=OFF
+
+//Location of wxWidgets resource file compiler binary (wxrc)
+wxWidgets_wxrc_EXECUTABLE:FILEPATH=/usr/local/bin/wxrc
+
 
 ########################
 # INTERNAL cache entries
@@ -349,4 +358,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding wxWidgets
+FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/usr/local/lib;;;-framework IOKit;-framework Carbon;-framework Cocoa;-framework QuartzCore;-framework AudioToolbox;-framework System;-framework OpenGL;-lwx_osx_cocoau_core-3.1;-lwx_baseu-3.1][/usr/local/lib/wx/include/osx_cocoa-unicode-3.1;/usr/local/include/wx-3.1][v3.1.6()]
 

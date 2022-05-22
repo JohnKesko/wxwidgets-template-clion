@@ -1,6 +1,8 @@
 # define minimum cmake version
-cmake_minimum_required(VERSION 3.14)
-project(starter)
+cmake_minimum_required(VERSION 3.22)
+
+project(PROJECT_NAME_CHANGE_ME)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}")
 
 ##---------------------------------------------
