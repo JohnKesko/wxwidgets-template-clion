@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/wxWidget-Template.iml" filepath="$PROJECT_DIR$/.idea/wxWidget-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wxWidgets-Template.iml" filepath="$PROJECT_DIR$/.idea/wxWidgets-Template.iml" />
     </modules>
   </component>
 </project>
