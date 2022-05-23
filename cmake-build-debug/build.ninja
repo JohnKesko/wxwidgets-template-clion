@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: clionproject1
+# Project: wxWidget-Template
 # Configurations: Debug
 # =============================================================================
 
@@ -39,56 +39,56 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/andreas/Development/1_CPP_Projects/clionproject1/cmake-build-debug/
+cmake_ninja_workdir = /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target clionproject1
+# Object build statements for EXECUTABLE target wxWidget-Template
 
 
 #############################################
-# Order-only phony target for clionproject1
+# Order-only phony target for wxWidget-Template
 
-build cmake_object_order_depends_target_clionproject1: phony || CMakeFiles/clionproject1.dir
+build cmake_object_order_depends_target_wxWidget-Template: phony || CMakeFiles/wxWidget-Template.dir
 
-build CMakeFiles/clionproject1.dir/cApp.cpp.o: CXX_COMPILER__clionproject1_Debug /Users/andreas/Development/1_CPP_Projects/clionproject1/cApp.cpp || cmake_object_order_depends_target_clionproject1
+build CMakeFiles/wxWidget-Template.dir/SourceFiles/cApp.cpp.o: CXX_COMPILER__wxWidget-Template_Debug /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/SourceFiles/cApp.cpp || cmake_object_order_depends_target_wxWidget-Template
   DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
-  DEP_FILE = CMakeFiles/clionproject1.dir/cApp.cpp.o.d
+  DEP_FILE = CMakeFiles/wxWidget-Template.dir/SourceFiles/cApp.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17
   INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1
-  OBJECT_DIR = CMakeFiles/clionproject1.dir
-  OBJECT_FILE_DIR = CMakeFiles/clionproject1.dir
+  OBJECT_DIR = CMakeFiles/wxWidget-Template.dir
+  OBJECT_FILE_DIR = CMakeFiles/wxWidget-Template.dir/SourceFiles
 
-build CMakeFiles/clionproject1.dir/cMain.cpp.o: CXX_COMPILER__clionproject1_Debug /Users/andreas/Development/1_CPP_Projects/clionproject1/cMain.cpp || cmake_object_order_depends_target_clionproject1
+build CMakeFiles/wxWidget-Template.dir/SourceFiles/cMain.cpp.o: CXX_COMPILER__wxWidget-Template_Debug /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/SourceFiles/cMain.cpp || cmake_object_order_depends_target_wxWidget-Template
   DEFINES = -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__
-  DEP_FILE = CMakeFiles/clionproject1.dir/cMain.cpp.o.d
+  DEP_FILE = CMakeFiles/wxWidget-Template.dir/SourceFiles/cMain.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++17
   INCLUDES = -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1
-  OBJECT_DIR = CMakeFiles/clionproject1.dir
-  OBJECT_FILE_DIR = CMakeFiles/clionproject1.dir
+  OBJECT_DIR = CMakeFiles/wxWidget-Template.dir
+  OBJECT_FILE_DIR = CMakeFiles/wxWidget-Template.dir/SourceFiles
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target clionproject1
+# Link build statements for EXECUTABLE target wxWidget-Template
 
 
 #############################################
-# Link the executable clionproject1
+# Link the executable wxWidget-Template
 
-build clionproject1: CXX_EXECUTABLE_LINKER__clionproject1_Debug CMakeFiles/clionproject1.dir/cApp.cpp.o CMakeFiles/clionproject1.dir/cMain.cpp.o
+build wxWidget-Template: CXX_EXECUTABLE_LINKER__wxWidget-Template_Debug CMakeFiles/wxWidget-Template.dir/SourceFiles/cApp.cpp.o CMakeFiles/wxWidget-Template.dir/SourceFiles/cMain.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  -L/usr/local/lib  -framework IOKit  -framework Carbon  -framework Cocoa  -framework QuartzCore  -framework AudioToolbox  -framework System  -framework OpenGL  -lwx_osx_cocoau_core-3.1  -lwx_baseu-3.1
   LINK_PATH = -L/usr/local/lib
-  OBJECT_DIR = CMakeFiles/clionproject1.dir
+  OBJECT_DIR = CMakeFiles/wxWidget-Template.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = clionproject1
-  TARGET_PDB = clionproject1.dbg
+  TARGET_FILE = wxWidget-Template
+  TARGET_PDB = wxWidget-Template.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/andreas/Development/1_CPP_Projects/clionproject1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -99,7 +99,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/andreas/Development/1_CPP_Projects/clionproject1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/andreas/Development/1_CPP_Projects/clionproject1 -B/Users/andreas/Development/1_CPP_Projects/clionproject1/cmake-build-debug
+  COMMAND = cd /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/andreas/Development/1_CPP_Projects/wxWidget-Template -B/Users/andreas/Development/1_CPP_Projects/wxWidget-Template/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -115,9 +115,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/andreas/Development/1_CPP_Projects/clionproject1/cmake-build-debug
+# Folder: /Users/andreas/Development/1_CPP_Projects/wxWidget-Template/cmake-build-debug
 
-build all: phony clionproject1
+build all: phony wxWidget-Template
 
 # =============================================================================
 # Built-in targets

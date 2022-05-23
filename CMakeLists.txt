@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.22)
 set(CMAKE_CXX_STANDARD 17)
 
-project(clionproject1)
+project(wxWidget-Template)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
@@ -25,12 +25,12 @@ find_package(wxWidgets COMPONENTS core base REQUIRED)
 # wxWidgets include (this will do all the magic to configure everything)
 include(${wxWidgets_USE_FILE})
 
-set(SRCS cApp.cpp cMain.cpp cApp.h cMain.h)
+set(SRCS SourceFiles/cApp.cpp SourceFiles/cMain.cpp HeaderFiles/cApp.h HeaderFiles/cMain.h)
 
 # If we build for windows systems, we also include the resource file
 # containing the manifest, icon and other resources.
 if (WIN32)
-    set(SRCS ${SRCS} wxWidgetTest.rc cMain.cpp cMain.h cApp.h cApp.cpp)
+    set(SRCS ${SRCS} wxWidgetTest.rc SourceFiles/cMain.cpp HeaderFiles/cMain.h HeaderFiles/cApp.h SourceFiles/cApp.cpp)
 endif (WIN32)
 
 add_executable(${PROJECT_NAME} WIN32 ${SRCS})
