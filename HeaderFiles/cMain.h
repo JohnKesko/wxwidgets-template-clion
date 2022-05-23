@@ -10,5 +10,5 @@ public:
     cMain();
 
     //Destructor
-    ~cMain();
+    ~cMain() override;
 };

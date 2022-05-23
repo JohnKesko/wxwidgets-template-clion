@@ -12,10 +12,10 @@ public:
     cApp();
 
     //Destructor
-    ~cApp();
+    ~cApp() override;
 
 public:
-    virtual bool OnInit();
+    bool OnInit() override;
 
 private:
     cMain* m_frame1 = nullptr;

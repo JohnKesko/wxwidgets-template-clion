@@ -6,14 +6,10 @@
 wxIMPLEMENT_APP(cApp);
 
 cApp::cApp()
-{
-
-}
+= default;
 
 cApp::~cApp()
-{
-
-}
+= default;
 
 // Main function to show the window.
 bool cApp::OnInit()
