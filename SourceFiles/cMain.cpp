@@ -8,5 +8,4 @@ cMain::cMain() : wxFrame(nullptr, wxID_ANY, "The sample window title", wxPoint(3
 
 }
 
-cMain::~cMain()
-= default;
+cMain::~cMain() = default;
