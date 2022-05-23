@@ -2,6 +2,7 @@
 cmake_minimum_required(VERSION 3.22)
 set(CMAKE_CXX_STANDARD 17)
 
+# Rename this to your project name.
 project(wxWidget-Template)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
