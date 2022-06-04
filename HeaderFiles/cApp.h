@@ -14,6 +14,8 @@ public:
     //Destructor
     ~cApp() override;
 
+
+// Function declaration
 public:
     bool OnInit() override;
 

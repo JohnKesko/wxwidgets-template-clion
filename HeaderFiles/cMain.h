@@ -3,12 +3,19 @@
 #pragma once
 #include "wx/wx.h"
 
-class cMain : public wxFrame
-{
+class cMain : public wxFrame{
 public:
     //Default constructor
     cMain();
 
     //Destructor
     ~cMain() override;
+
 };
+
+
+/*
+// Function Declaration
+public:
+    void wxFileDialog(wxCommandEvent& WXUNUSED(event));
+};*/
