@@ -1,6 +1,6 @@
 # wxwidgets-template
 
-This is a super clean template I created in CLion to have a starting point using wxWidgets.
+This is a clean template I created in CLion to have a starting point using wxWidgets.
 It just creates a blank window with a title, nothing else. Just press build and it will run.
 
 The reason was I couldn't find any good starting points with a clean structure of header files and source files when I started to use wxWidgets.
