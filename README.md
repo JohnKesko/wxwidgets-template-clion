@@ -17,7 +17,13 @@ The easiest way to get started with wxWidgets is either with homebrew or just co
 2. Go to: https://docs.wxwidgets.org/3.2/plat_osx_install.html
 3. Follow the instructions.
 4. Now you have a folder somewhere called "build-cocoa-debug"
-5. Check the CMakeLists.txt to configure the CMake build.
+5. In CMakeLists.txt
+
+```
+set(wxWidgets_ROOT_DIR /Path/To/wxWidgets/wxWidgets-version-x-y-z)
+```
+Notice no '/' at the end.
+
 6. Done. Click debug or run.
 
-![Screenshot 2023-04-22 at 14.16.28.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-04-22%20at%2014.16.28.png)
+![screenshot.png](img%2Fscreenshot.png)
