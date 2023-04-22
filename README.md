@@ -1,20 +1,23 @@
-# wxwidgets-template
+# wxWidgets-template (CLion)
 
-This is a clean template I created in CLion to have a starting point using wxWidgets.
-It just creates a blank window with a title, nothing else. Just press build and it will run.
+This is a minimal template I created for CLion to have a starting point using wxWidgets. It just creates a blank window with a title, nothing else.
+The reason was I couldn't find any good starting points with a clean structure of header and source files when I started to use wxWidgets. I just needed a simple template.
 
-The reason was I couldn't find any good starting points with a clean structure of header files and source files when I started to use wxWidgets.
-I just needed a really clean and simple template.
-It has a basic folder structure with HeaderFiles and SourceFiles folders.
+
 
 It was created especially for Mac.
 
-CLion version: 2022.1.1
-OSX Monterey 12.3.1 
+CLion version: 2023.1.1 OSX Ventura 13.0
 
-The easiest way to start and have it running on Mac is to use it with homebrew.
-1. brew install wxwidgets
-2. clone or download this repo.
-3. run (if you are using CLion.
+The easiest way to get started with wxWidgets is either with homebrew or just compile it by your self.
 
-It creates a simple window with CMake. All is explained in the CMakeLists.txt
+### Compile yourself
+1. Clone the repo or download here: https://www.wxwidgets.org/downloads/
+   (if you download, just select: "Source for Linux, macOS, etc")
+2. Go to: https://docs.wxwidgets.org/3.2/plat_osx_install.html
+3. Follow the instructions.
+4. Now you have a folder somewhere called "build-cocoa-debug"
+5. Check the CMakeLists.txt to configure the CMake build.
+6. Done. Click debug or run.
+
+![Screenshot 2023-04-22 at 14.16.28.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-04-22%20at%2014.16.28.png)
