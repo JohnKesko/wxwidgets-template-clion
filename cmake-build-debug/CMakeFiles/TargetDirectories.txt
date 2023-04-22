@@ -1,3 +1,0 @@
-/Users/andreas/Development/1_CPP_Projects/wx-test01/wxwidgets-template-clion/cmake-build-debug/CMakeFiles/wxWidget-Template.dir
-/Users/andreas/Development/1_CPP_Projects/wx-test01/wxwidgets-template-clion/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/andreas/Development/1_CPP_Projects/wx-test01/wxwidgets-template-clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
