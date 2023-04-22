@@ -9,7 +9,7 @@ It was created especially for Mac.
 
 CLion version: 2023.1.1 OSX Ventura 13.0
 
-The easiest way to get started with wxWidgets is either with homebrew or just compile it by your self.
+The easiest way to get started with wxWidgets is either with homebrew or just compile it by yourself.
 
 ### Compile yourself
 1. Clone the repo or download here: https://www.wxwidgets.org/downloads/
