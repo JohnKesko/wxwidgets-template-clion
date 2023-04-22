@@ -1,4 +1,4 @@
-# Install script for directory: /Users/andreas/Development/1_CPP_Projects/wx-test01/wxwidgets-template-clion
+# Install script for directory: /Users/andreasohlstrom/Development/2_CPP_Projects/wxwidgets-template-clion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/andreas/Development/1_CPP_Projects/wx-test01/wxwidgets-template-clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/andreasohlstrom/Development/2_CPP_Projects/wxwidgets-template-clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
