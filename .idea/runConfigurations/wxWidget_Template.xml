@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="wxWidget-Template" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" REDIRECT_INPUT_PATH="$wxWidgets$$PROJECT_DIR$/../../_misc/wxWidgets/wxWidgets-3.2.2.1/include/wx" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="wxWidget-Template" TARGET_NAME="wxWidget-Template" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="wxWidget-Template" RUN_TARGET_NAME="wxWidget-Template">
-    <method v="2">
-      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-    </method>
-  </configuration>
-</component>
