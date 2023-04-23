@@ -35,7 +35,13 @@ file(GLOB_RECURSE SRCS
         "HeaderFiles/*.h"
         )
 
-add_executable(${PROJECT_NAME} MACOSX_BUNDLE ${SRCS})
+if(APPLE)
+    add_executable(${PROJECT_NAME} MACOSX_BUNDLE ${SRCS})
+elseif(WIN32)
+    add_executable(${PROJECT_NAME} WIN32 ${SRCS})
+else()
+    add_executable(${PROJECT_NAME} ${SRCS})
+endif()
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${wxWidgets_INCLUDE_DIRS})
 target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES})
