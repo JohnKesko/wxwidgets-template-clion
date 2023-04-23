@@ -13,10 +13,16 @@ project(wxWidget-Template)
 ## wxWidgets configuration here
 ##---------------------------------------------
 # 1. Configure to the path where your downloaded wxWidgets are located. Notice no / at the end.
-set(wxWidgets_ROOT_DIR /Path/To/wxWidgets/wxWidgets-version-x-y-z)
-
 # 2. This does not need to be changed since it's default built behaviour.
-set(wxWidgets_CONFIG_EXECUTABLE ${wxWidgets_ROOT_DIR}/build-cocoa-debug/wx-config)
+if(APPLE)
+    set(wxWidgets_ROOT_DIR /Path/To/wxWidgets/wxWidgets-version-x-y-z)
+    set(wxWidgets_CONFIG_EXECUTABLE ${wxWidgets_ROOT_DIR}/build-cocoa-debug/wx-config)
+elseif(WIN32)
+    set(wxWidgets_ROOT_DIR C:/path/to/your/wxWidgets) # Set the correct path to your wxWidgets folder on Windows
+    set(wxWidgets_CONFIG_EXECUTABLE ${wxWidgets_ROOT_DIR}/build-msw-debug/wx-config)
+else()
+    find_program(wxWidgets_CONFIG_EXECUTABLE wx-config)
+endif()
 
 find_package(wxWidgets COMPONENTS core base REQUIRED)
 
