@@ -30,7 +30,10 @@ endif()
 ##---------------------------------------------
 ## Configure the project here
 ##---------------------------------------------
-set(SRCS SourceFiles/cApp.cpp SourceFiles/cMain.cpp HeaderFiles/cApp.h HeaderFiles/cMain.h)
+file(GLOB_RECURSE SRCS
+        "SourceFiles/*.cpp"
+        "HeaderFiles/*.h"
+        )
 
 add_executable(${PROJECT_NAME} MACOSX_BUNDLE ${SRCS})
 
